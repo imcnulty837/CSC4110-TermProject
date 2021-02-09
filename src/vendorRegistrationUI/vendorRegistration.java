@@ -1,3 +1,5 @@
+package vendorRegistrationUI;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -5,7 +7,7 @@ import java.awt.event.ActionListener;
 /**
  *
  */
-public class vendorLogin {
+public class vendorRegistration {
     private JTextField phoneNumber;
     private JTextField cityName;
     private JTextField streetAddress;
@@ -18,7 +20,7 @@ public class vendorLogin {
     private JPanel menu;
     private JButton registerButton;
 
-    public vendorLogin() {
+    public vendorRegistration() {
         registerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -28,8 +30,8 @@ public class vendorLogin {
     }
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("vendorLogin");
-        frame.setContentPane(new vendorLogin().menu);
+        JFrame frame = new JFrame("vendorRegistration");
+        frame.setContentPane(new vendorRegistration().menu);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
